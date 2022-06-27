@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration page</title>
+  </head>
+  <body bgcolor="beige" id="top">
+    <nav>
+      <legend align="right">
+        <a href="./index.html" target="_blank">Home</a>&nbsp;
+        <a href="./aboutpage.html" target="_blank">AboutUs</a>&nbsp;
+        <a href="./gallerypage.html" target="_blank">Gallery</a>&nbsp;
+        <a href="./contact page.html" target="_blank">Contact</a>&nbsp;
+        <a href="#top">Go to Top of Page</a><br /><br />
+        <hr size="10" noshade />
+      </legend>
+    </nav>
+    <br />
+    <header>
+      <h1>STUDENT REGISTARTION FORM</h1>
+      <hr size="10" noshade />
+      <p>Kindly fill out the form carefully for registration</p>
+    </header>
+    <main>
+      <form action="Done" method="POST" name="sign-up form">
+        <fieldset>
+          <legend align="center">Student Information</legend>
+          <label for="first Name:">First Name:</label>
+          <input
+            type="Text"
+            placeholder="FIRST NAME"
+            id="first Name"
+            required
+          />
+          <br /><br />
+          <label for="Middle Name:">Middle Name:</label>
+          <input
+            type="Text"
+            placeholder="MIDDLE NAME"
+            id="Middle Name"
+            required
+          /><br /><br />
+          <label for="last Name:">Last Name:</label>
+          <input
+            type="Text"
+            placeholder="LAST NAME"
+            id="last Name"
+            required
+          /><br /><br />
+          <label for="Phone number:">Phone Number</label>
+          <input
+            type="number"
+            placeholder="+234 800 000 0000"
+            id="Phone number"
+            required
+          /><br /><br />
+          <label for="email:">Student email:</label>
+          <input
+            type="email"
+            placeholder="ex: myname@example.com"
+            id="email"
+            required
+          /><br /><br />
+          <p>Please select your gender</p>
+          <input type="radio" name="gender" value="male" id="male" /><label
+            for="male"
+            >Male</label
+          >
+          <input type="radio" name="gender" value="female" id="female" /><label
+            for="female"
+            >Female</label
+          >
+          <input type="radio" name="gender" value="others" id="others" /><label
+            for="others"
+            >Others</label
+          ><br /><br />
+          <label for="Date of birth">Date of Birth:</label>
+          <input type="Date" id="Date of birth" name="Date of birth" />
+        </fieldset>
+        <fieldset>
+          <legend align="center">Subject and Class Selection</legend>
+          <p><b>Class Enrolling For:</b></p>
+          <select>
+            <optgroup label="Junior Class">
+              <option>JSS 1</option>
+              <option>JSS 2</option>
+              <option>JSS 3</option>
+            </optgroup>
+            <optgroup label="Senior Class">
+              <option>SS 1</option>
+              <option>SS 2</option>
+              <option>SS 3</option>
+            </optgroup></select
+          ><br /><br />
+          <p><b>Kindly Select Subject (Arts/Science):</b></p>
+          <input type="checkbox" name="subjects" value="English" />English
+          <br />
+          <br />
+          <input
+            type="checkbox"
+            name="subjects"
+            value="Mathematics"
+          />Mathematics <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Chemistry" />Chemistry
+          <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Geography" />Geography
+          <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Physics" />Physics
+          <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Economics" />Economics
+          <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Biology" />Biology
+          <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Civic Education" />Civic
+          Education <br />
+          <br />
+          <input type="checkbox" name="subjects" value="History" />History
+          <br />
+          <br />
+          <input
+            type="checkbox"
+            name="subjects"
+            value="Government"
+          />Government<br />
+          <br />
+          <input
+            type="checkbox"
+            name="subjects"
+            value="Physical Education"
+          />Physical Education<br />
+          <br />
+          <input type="checkbox" name="subjects" value="History" />History
+          <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Literature" />Literature
+          <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Commerce" />Commerce
+          <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Fine Arts" />Fine Arts
+          <br />
+          <br />
+          <input
+            type="checkbox"
+            name="subjects"
+            value="Agriculture"
+          />Adriculture <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Computer" />Computer
+          <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Social Studies" />Social
+          Studies<br />
+          <br />
+          <input
+            type="checkbox"
+            name="subjects"
+            value="Religious Studies"
+          />Religious Studies <br />
+          <br />
+          <input type="checkbox" name="subjects" value="Accounting" />Accounting
+          <br />
+          <br />
+          <input type="checkbox" name="subjects" value="History" />History
+          <br />
+          <br />
+        </fieldset>
+        <fieldset>
+          <legend align="center">More Info</legend>
+
+          <p>Home Address:</p>
+          <textarea rows="10" cols="20"></textarea><br /><br />
+          <p>Please Select One out of the extracurriculum activity Offered</p>
+          <input type="radio" name="activity" value="piano" id="piano" /><label
+            for="piano"
+            >Piano</label
+          >
+          <input
+            type="radio"
+            name="activity"
+            value="ballet"
+            id="ballet"
+          /><label for="ballet">Ballet</label><br /><br />
+          <p>Additional Comment:</p>
+          <textarea rows="10" cols="20"></textarea><br /><br /><br />
+
+          <label for="Password:">Create Password:</label>
+          <input
+            type="password"
+            placeholder="password required"
+            id="Password"
+            required
+          /><br /><br />
+          <label for="Password:">Confirm Password:</label>
+          <input
+            type="password"
+            placeholder="confirm password"
+            id="Password"
+            required
+          /><br /><br />
+        </fieldset>
+      </form>
+    </main>
+    <br /><br />
+    <footer>
+      <input type="submit" value="Submit" /><br /><br />
+      <a href="#top">Go to Top of Page</a><br /><br />
+      <a href="./index.html" target="_blank"> Go to Home Page</a><b><br /></b>
+    </footer>
+  </body>
+</html>
